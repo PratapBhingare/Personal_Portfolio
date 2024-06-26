@@ -403,7 +403,7 @@ span{
 
 /*breakpoint*/
 
-@media(max-width: 1200px){
+/*@media(max-width: 1200px){
     html{
         font-size: 55%;
     }
@@ -523,4 +523,138 @@ span{
     .contact form .input-box input{
         width:100%
     }
+}*/
+
+@media screen and (max-width:400px){
+
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,0.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+        display: none;
+
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .about-img img {
+        width: 51svw;
+        margin-left: -25;
+    }
+
+    .about {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background: var(--snd-bg-color);
+    }
+
+    .services-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services-container .services-box {
+        flex: 1 1 10rem;
+        background: var(--snd-bg-color);
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        border: .2rem solid var(--bg-color);
+        transition: .5s ease;
+        width: 100%;
+    }
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem 1%;
+        background: var(--snd-bg-color);
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .home-content h3{
+        font-size: 5rem;
+    }
+
+    .home-content{
+        order: 2;
+    }
+
+    .home-img img{
+        width: 90vw;
+        margin-top: 4rem;
+    }
+
+    .footer p{
+        font-size: 1rem;
+    }
+
+    .home-content h3{
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    
+    .home-content h3:nth-of-type(2){
+        margin-bottom: 1.5rem;
+    }
+    
+    span{
+        color: var(--main-color);
+    }
+    
+    .home-content h1{
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .social-media a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        border: .2rem solid var(--main-color);
+        border-radius: 50%;
+        font-size: 2rem;
+        color: var(--main-color);
+        margin: 3rem 1.5rem 3rem 0;
+        transition: .5s ease;
+    }
+    
 }
